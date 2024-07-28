@@ -592,7 +592,7 @@ function findTetrisPlacement(area, cells) {
         var xx = tx(0, 0, bounds, ang);
         var yy = ty(0, 0, bounds, ang);
 
-        if (!layout[xx][yy]) {
+        if (!layout[xx]?.[yy]) {
             var bb = areaBounds(area);
             insertionPoints = new Set();
 
